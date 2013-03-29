@@ -4,7 +4,7 @@ require_once( get_template_directory() . '/lib/init.php' );
 
 define( 'CHILD_THEME_NAME', 'Genesis Starter Theme' );
 define( 'CHILD_THEME_URI', 'https://github.com/nathanrice/Genesis-Starter-Theme' );
-define( 'CHILD_THEME_VERSION', '0.2.0-dev' );
+define( 'CHILD_THEME_VERSION', '0.2.0' );
 
 //** $content_width
 $content_width = 740;
