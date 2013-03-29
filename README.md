@@ -1,4 +1,3 @@
-Genesis-Starter-Theme
-=====================
+# Genesis Starter Theme by Nathan Rice
 
-Starter child theme for the Genesis framework
+##### Starter child theme for the Genesis framework
