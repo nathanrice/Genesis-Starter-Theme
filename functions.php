@@ -12,13 +12,8 @@ $content_width = 740;
 //* HTML5, please
 add_theme_support( 'genesis-html5' );
 
-#add_action( 'wp_head', 'nr_viewport_meta_tag' );
-/**
- * Viewport tag, for responsive.
- */
-function nr_viewport_meta_tag() {
-    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>' . "\n";
-}
+//* Enable responsive viewport
+add_theme_support( 'genesis-responsive-viewport' );
 
 //* Custom Image Sizes
 #add_image_size( 'image-size', 100, 100, true );
