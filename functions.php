@@ -23,8 +23,20 @@ function nr_viewport_meta_tag() {
 //* Custom Image Sizes
 #add_image_size( 'image-size', 100, 100, true );
 
-//* Disable widgets
+//* Disable all Genesis widgets
 #remove_action( 'widgets_init', 'genesis_load_widgets' );
+
+//* Disable certain Genesis widgets
+#add_action( 'widgets_init', 'nr_disable_widgets' );
+/**
+ * Disables individual Genesis widgets
+ * 
+ */
+function nr_disable_widgets() {
+	unregister_widget( 'Genesis_Featured_Page' );
+	unregister_widget( 'Genesis_Featured_Post' );
+	unregister_widget( 'Genesis_User_Profile_Widget' );
+}
 
 //* Remove layouts
 #genesis_unregister_layout( 'sidebar-content' );
