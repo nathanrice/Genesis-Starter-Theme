@@ -15,6 +15,14 @@ add_theme_support( 'genesis-html5' );
 //* Enable responsive viewport
 add_theme_support( 'genesis-responsive-viewport' );
 
+#add_action( 'wp_enqueue_scripts', 'nr_fonts' );
+/**
+ * Enqueue fonts
+ */
+function nr_fonts() {
+	wp_enqueue_script( 'google-font-name', '//fonts.googleapis.com/css?family=Font+Name:400,700' );
+}
+
 //* Custom Image Sizes
 #add_image_size( 'image-size', 100, 100, true );
 
