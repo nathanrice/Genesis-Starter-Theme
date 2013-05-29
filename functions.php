@@ -1,6 +1,6 @@
 <?php
 //* Start the engine
-require_once( get_template_directory() . '/lib/init.php' );
+include_once( get_template_directory() . '/lib/init.php' );
 
 define( 'CHILD_THEME_NAME', 'Genesis Starter Theme' );
 define( 'CHILD_THEME_URI', 'https://github.com/nathanrice/Genesis-Starter-Theme' );
