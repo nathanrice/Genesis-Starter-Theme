@@ -15,6 +15,9 @@ add_theme_support( 'genesis-html5' );
 //* Enable responsive viewport
 add_theme_support( 'genesis-responsive-viewport' );
 
+//* Disable Post Formats UI
+#add_filter( 'enable_post_format_ui', '__return_false' );
+
 #add_action( 'wp_enqueue_scripts', 'nr_fonts' );
 /**
  * Enqueue fonts
